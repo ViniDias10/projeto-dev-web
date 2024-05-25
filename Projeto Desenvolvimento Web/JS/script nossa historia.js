@@ -16,3 +16,25 @@ function scrollFunction() {
 }
 
 
+//funcionalidade Lista 
+document.addEventListener('DOMContentLoaded', function() {
+    var verMaisButton = document.getElementById('verMaisLista');
+    var linhasOcultas = document.querySelectorAll('#conquistas .hide-row');
+  
+    verMaisButton.addEventListener('click', function() {
+      linhasOcultas.forEach(function(row) {
+        if (row.style.display === 'none' || row.style.display === '') {
+          row.style.display = 'table-row'; 
+          row.classList.add('visible-row'); // Adiciona a classe 'visible-row'
+          row.classList.add('list-marker'); // Adiciona a classe 'list-marker' para adicionar o marcador de lista
+          verMaisButton.textContent = 'Ver menos'; 
+        } else {
+          row.style.display = 'none'; 
+          row.classList.remove('visible-row'); // Remove a classe 'visible-row'
+          row.classList.remove('list-marker'); // Remove a classe 'list-marker'
+          verMaisButton.textContent = 'Ver mais'; 
+        }
+      });
+    });
+  });
+  
