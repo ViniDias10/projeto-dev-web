@@ -14,3 +14,12 @@ function scrollFunction() {
         document.getElementById("btnTopo").style.display = "none";
     }
 }
+
+//Funcionalidade mensagem de cofirmação
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o comportamento padrão do formulário
+
+    // Mostrar a mensagem de confirmação
+    document.getElementById('confirmationMessage').style.display = 'block';
+  });
