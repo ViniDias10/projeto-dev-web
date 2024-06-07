@@ -1,51 +1,60 @@
+body{
+  background-color: #000;
+  color: white;
+  margin: 0;
+}
+
+
 nav {
-    background-color: #333; 
-    padding: 10px 0; 
-  }
+  background-color: #333; 
+  padding: 10px 0;
   
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px; 
-    margin: 0 auto; 
-  }
-    
-  .logo {
-    width: 150px; 
-    height: auto; 
-    margin-left: 150px;
-    }
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px; 
+  margin: 0 auto; 
+}
+
+.logo {
+  width: 150px; 
+  height: auto; 
+  margin-right: 50px;
+}
+
+.menu {
+  list-style: none;
+  padding-left: 50px;
+  height: 30px;
   
-    .menu {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-  
-    .menu li {
-      display: inline-block;
-      margin-right: 80px;
-    }
-  
-    .menu a {
-      color: #fff; 
-      font-family: sans-serif; 
-      text-decoration: none;
-    }
-    
-    nav a {
-      color: #fff; 
-      font-family: sans-serif;
-      text-decoration: none;
-      transition: color 0.3s ease; 
-      font-size: 25px; 
-      margin-right: 25px;
-    }
-    
-    nav a:hover {
-        color: #ff6961; 
-      }
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu a {
+  color: #fff; 
+  font-family: sans-serif; 
+  text-decoration: none;
+}
+
+nav a {
+  color: #fff; 
+  font-family: sans-serif;
+  text-decoration: none;
+  transition: color 0.3s ease; 
+  font-size: 25px; 
+  margin-right: 25px;
+}
+
+nav a:hover {
+  color: #ff6961; 
+}
 
 
       .footer {
@@ -109,3 +118,108 @@ nav {
         line-height: 50px; 
         font-size: 30px;
     }
+
+    .titulo-principal{
+      text-align: center;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-size: 45px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+  }
+  
+
+  .formulario {
+      width: 100%;
+      max-width: 800px;
+      height: 400px;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+  }
+  
+  .formulario:hover {
+      transform: scale(1.02);
+  }
+  
+  #formulario h2 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 24px;
+  }
+  
+  #formulario label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+      text-align: left;
+      font-weight: bold;
+  }
+  
+  #formulario select,
+  #formulario input[type="text"],
+  #formulario input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+  }
+  
+  #formulario select,
+  #formulario input[type="text"] {
+      background-color: #f9f9f9;
+      color: #333;
+      font-size: 16px;
+  }
+  
+  #formulario input[type="submit"] {
+      background-color: #74ebd5;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  #formulario input[type="submit"]:hover {
+      background-color: #acb6e5;
+  }
+  
+  #formulario p {
+      color: #333;
+      font-size: 14px;
+  }
+
+  .listar-ingresso{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 70px;
+  }
+
+  .listar-ingresso button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.listar-ingresso button:hover {
+  background-color: #717171;
+}
+

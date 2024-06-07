@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingressos</title>
+    <link rel="StyleSheet" href="style.css" />
+  </head>
+
+<html lang="pt-br">
+
+<head>    
+    <title>CRUD de Jogos</title>
+    <link rel="StyleSheet" href="../CSS/style ingresso.css">
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="container-nav">
+          <img src="https://iconape.com/wp-content/files/yw/331314/svg/331314.svg" alt="Logo Vasco da Gama" class="logo">
+          <ul class="menu">
+            <li><a href="../index.html">Início</a></li> 
+            <li><a href="../historia.html">Nossa história</a></li>
+            <li><a href="../noticias.html">Notícias</a></li>
+            <li><a href="../contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <h1 class="titulo-principal">Garanta o Seu Ingresso para os Próximos Jogos</h1>
+    <div class="container">
+        <div class="formulario">
+            <form action="adicionar.php" method="post" id="formulario">
+                <h2 style="font-size: 35px;">Adquirir Ingresso</h2>
+                <p>*Compre um ingresso por vez*</p>
+                <label for="partida">Escolha a partida que você deseja adquirir o ingresso:</label>
+                <select name="partida" id="partida" required>
+                    <option value="Vasco X Fortaleza - Dia 12/06/2024 ás 19:00 (São Januário)">Vasco X Fortaleza - Dia 12/06/2024 ás 19:00 (São Januário)</option>
+                    <option value="Vasco X Cruzeiro Vasco X Cruzeiro - Dias 25/06/2024 ás 21:30 (São Januário)">Vasco X Cruzeiro - Dias 25/06/2024 ás 21:30 (São Januário)</option>
+                </select><br>
+
+                <label for="setor">Escolha o setor:</label>
+                <select name="setor" id="setor" required>
+                    <option value="80">Arquibancada | Inteira: R$ 80,00</option>
+                    <option value="40">Arquibancada | Meia: R$ 40,00</option>
+                    <option value="200">VIP | Inteira R$ 200,00 </option>
+                    <option value="100">VIP | Meia R$ 100,00</option>
+                </select><br>
+
+
+                <input type="submit" id="botao" style="background-color: black; font-size: 20px;" value="Comprar">
+
+                <p id="resultado"></p>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="listar-ingresso">
+        <button onclick="window.location.href='listar.php'">Listar ingressos</button>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-container">
+          <img class="img-footer" src="https://vasco.com.br/wp-content/themes/hpmais/assets/images/logo_vasco_2.png">
+          <div class="social-links">
+            <p class="siga-nos">Siga-nos</p>
+            <a class="elementos-footer" target="_blank" href="https://www.instagram.com/vascodagama/"><img class="me-1" src="https://vasco.com.br/wp-content/themes/hpmais/assets/images/insta_footer.png" alt="Instagram"></a>
+            <a class="elementos-footer" target="_blank" href="https://www.facebook.com/vascodagama"><img class="me-1" src="https://vasco.com.br/wp-content/themes/hpmais/assets/images/face_footer.png" alt="Facebook"></a>
+            <a class="elementos-footer" target="_blank" href="https://www.tiktok.com/@vasco"><img class="me-1" src="https://vasco.com.br/wp-content/themes/hpmais/assets/images/tiktok_footer.png" alt="Tiktok"></a>
+            <a class="elementos-footer" target="_blank" href="https://www.youtube.com/@vascodagama2108"><img class="me-1" src="https://vasco.com.br/wp-content/themes/hpmais/assets/images/youtube_footer.png" alt="Youtube"></a>
+          </div>
+        </div>
+      </div>
+
+      <script src="../JS/script ingresso.js"></script>
+</body>
+</html>
+
+</html>
+	
