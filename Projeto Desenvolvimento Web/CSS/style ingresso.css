@@ -123,6 +123,8 @@ nav a:hover {
       text-align: center;
       font-family:Georgia, 'Times New Roman', Times, serif;
       font-size: 45px;
+      padding-top: 30px;
+      
     }
 
     .container {
@@ -223,3 +225,98 @@ nav a:hover {
   background-color: #717171;
 }
 
+
+.hidden {
+  display: none;
+}
+
+.container-cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: -60px; 
+  
+}
+.formulario-cadastro {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+.formulario-cadastro h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formulario-cadastro p{
+  text-align: center;
+}
+
+.formulario-cadastro label {
+  display: block;
+  margin-bottom: 5px;
+}
+.formulario-cadastro input[type="text"],
+.formulario-cadastro input[type="email"],
+.formulario-cadastro input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.formulario-cadastro input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+}
+.formulario-cadastro input[type="submit"]:hover {
+  background-color: #333;
+}
+
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.quantity-container button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.quantity-container input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+.total-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.centralizar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto; /* Isso centraliza horizontalmente */
+  width: 50%; /* Ajuste conforme necessário */
+}
