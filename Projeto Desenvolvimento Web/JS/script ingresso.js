@@ -51,4 +51,3 @@ document.querySelectorAll('.quantity-container input').forEach(item => {
     item.addEventListener('input', updateTotalPrice);
 });
 
-
