@@ -164,10 +164,16 @@ function changeQuantity(id, delta) {
 
 // Deletar
 function excluirIngresso(index) {
-    ingressos.splice(index, 1);
+    ingressos.splice(index, 1); // Remove o ingresso da lista
+    salvarIngressos(); // Atualiza o localStorage após remover o ingresso
     alert("Sua compra foi cancelada");
     fecharPopup();
     renderizarIngressosNormal();
+}
+
+// Atualiza o renderizarIngressosNormal para chamar renderizarIngressos
+function renderizarIngressosNormal() {
+    renderizarIngressos('popup-ingressos');
 }
 
 
